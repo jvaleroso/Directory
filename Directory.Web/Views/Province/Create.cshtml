@@ -1,0 +1,34 @@
+﻿@using Directory
+@model Province
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create new province</h2>
+
+<div>
+    <div>
+        @using (Html.BeginForm("Create", "Province", FormMethod.Post))
+        {
+            @Html.HiddenFor(p => p.Id)
+
+            <div>
+                @Html.LabelFor(p => p.Name)
+                <div>@Html.TextBoxFor(p => p.Name)</div>
+            </div>
+
+            <div>
+                @Html.LabelFor(p => p.Code)
+                <div>@Html.TextBoxFor(p => p.Code)</div>
+            </div>
+
+            <div>
+                <div>
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                    @Html.ActionLink("Back", "Index")
+                </div>
+            </div>
+        }
+    </div>
+</div>

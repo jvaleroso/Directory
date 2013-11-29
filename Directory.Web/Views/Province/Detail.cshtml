@@ -1,0 +1,45 @@
+﻿@using Directory
+@model Province
+@{
+    ViewBag.Title = "Detail";
+}
+
+<h2>Detail</h2>
+
+<div>
+    @using (Html.BeginForm("Update", "Province", FormMethod.Post))
+    {
+        @Html.HiddenFor(p => p.Id)
+
+        <div>
+            @Html.LabelFor(p => p.Name)
+            <div>@Html.TextBoxFor(p => p.Name)</div>
+        </div>
+
+        <div>
+            @Html.LabelFor(p => p.Code)
+            <div>@Html.TextBoxFor(p => p.Code)</div>
+        </div>
+
+        <div>
+            <div>
+                <input type="submit" value="Update" class="btn btn-primary" />
+                @Html.ActionLink("Back", "Index")
+            </div>
+        </div>
+    }
+
+    <table>
+        <thead>
+            <tr><th>Name</th></tr>
+        </thead>
+        <tbody>
+
+            @foreach (var city in this.Model.Cities)
+            {
+                <tr><td>@city.Name</td></tr>
+            }
+        </tbody>
+    </table>
+
+</div>

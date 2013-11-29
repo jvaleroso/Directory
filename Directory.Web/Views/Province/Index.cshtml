@@ -1,0 +1,25 @@
+﻿@model IList<global::Directory.Province>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Provinces</h2>
+@Html.ActionLink("Create", "Create")
+<table>
+    <thead>
+        <tr>
+            <th>Province Code</th>
+            <th>Province Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var province in this.Model)
+        {
+            <tr>
+                <td>@province.Code</td>
+                <td>@Html.ActionLink(province.Name, "Detail", new { id = province.Id })</td>
+                <td>@Html.ActionLink("Delete", "Delete", new { id = province.Id })</td>
+            </tr>
+        }
+    </tbody>
+</table>

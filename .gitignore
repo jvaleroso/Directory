@@ -1,0 +1,11 @@
+Directory.Dao.NHibernate.SqlServer/bin/
+Directory.Dao.NHibernate.SqlServer/obj/
+Directory.Dao.NHibernate/bin/
+Directory.Dao.NHibernate/obj/
+Directory.Services/bin/
+Directory.Services/obj/
+Directory.Tests/obj/
+Directory.Web/bin/
+Directory.Web/obj/
+Directory/bin/
+Directory/obj/

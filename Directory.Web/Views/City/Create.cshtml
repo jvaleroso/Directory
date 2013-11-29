@@ -1,0 +1,33 @@
+﻿@using Directory.Web.Models
+@model CityViewModel
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+<div>
+    <div>
+        @using (Html.BeginForm("Create", "City", FormMethod.Post))
+        {
+            @Html.HiddenFor(c => c.Id)
+
+            <div>
+                @Html.LabelFor(c => c.Name)
+                @Html.TextBoxFor(p => p.Name)
+            </div>
+
+            <div>
+                @Html.LabelFor(c => c.ProvinceId)
+                @Html.DropDownListFor(c=>c.ProvinceId, ViewBag.Provinces as IEnumerable<SelectListItem>, "Select Province")
+            </div>
+
+            <div>
+                <input type="submit" value="Create" class="btn btn-primary" />
+                @Html.ActionLink("Back", "Index")
+            </div>
+        }
+    </div>
+</div>
+

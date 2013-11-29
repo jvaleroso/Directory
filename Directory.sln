@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Directory", "Directory\Directory.csproj", "{F957ACD1-6C3D-47BD-8499-FD44522695D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Directory.Web", "Directory.Web\Directory.Web.csproj", "{122C7A1C-178D-42CA-A760-5D570FDE7A36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Directory.Dao.NHibernate", "Directory.Dao.NHibernate\Directory.Dao.NHibernate.csproj", "{AB371391-EE36-4278-BC50-FFC8B03BDA19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Directory.Services", "Directory.Services\Directory.Services.csproj", "{B9CC8E74-5930-438F-87D9-0996C62C5FFC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{08BC19C8-577E-4E67-9397-A04099CF5C1E}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Directory.Dao.NHibernate.SqlServer", "Directory.Dao.Nhibernate.SqlServer\Directory.Dao.NHibernate.SqlServer.csproj", "{AD0656E8-5C31-4D07-B189-87CFFFC71254}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Directory.Tests", "Directory.Tests\Directory.Tests.csproj", "{3AA6A42D-6284-41B6-B0B8-5EBD672174B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F957ACD1-6C3D-47BD-8499-FD44522695D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F957ACD1-6C3D-47BD-8499-FD44522695D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F957ACD1-6C3D-47BD-8499-FD44522695D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F957ACD1-6C3D-47BD-8499-FD44522695D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{122C7A1C-178D-42CA-A760-5D570FDE7A36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{122C7A1C-178D-42CA-A760-5D570FDE7A36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{122C7A1C-178D-42CA-A760-5D570FDE7A36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{122C7A1C-178D-42CA-A760-5D570FDE7A36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB371391-EE36-4278-BC50-FFC8B03BDA19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB371391-EE36-4278-BC50-FFC8B03BDA19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB371391-EE36-4278-BC50-FFC8B03BDA19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB371391-EE36-4278-BC50-FFC8B03BDA19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9CC8E74-5930-438F-87D9-0996C62C5FFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9CC8E74-5930-438F-87D9-0996C62C5FFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9CC8E74-5930-438F-87D9-0996C62C5FFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9CC8E74-5930-438F-87D9-0996C62C5FFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD0656E8-5C31-4D07-B189-87CFFFC71254}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD0656E8-5C31-4D07-B189-87CFFFC71254}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD0656E8-5C31-4D07-B189-87CFFFC71254}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD0656E8-5C31-4D07-B189-87CFFFC71254}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AA6A42D-6284-41B6-B0B8-5EBD672174B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AA6A42D-6284-41B6-B0B8-5EBD672174B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AA6A42D-6284-41B6-B0B8-5EBD672174B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AA6A42D-6284-41B6-B0B8-5EBD672174B0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
